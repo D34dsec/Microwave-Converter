@@ -6,16 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microwave Cooking Time Converter</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-
-        .container {
-            max-width: 500px;
-            margin-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -42,21 +33,7 @@
         </div>
     </div>
 
-    <script>
-        document.getElementById("cooking-time-form").addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            const originalTime = parseFloat(document.getElementById("original-time").value);
-            const originalWattage = parseInt(document.getElementById("original-wattage").value);
-            const newWattage = parseInt(document.getElementById("new-wattage").value);
-
-            const newTime = (originalTime * originalWattage) / newWattage;
-            const minutes = Math.floor(newTime);
-            const seconds = Math.round((newTime - minutes) * 60);
-
-            document.getElementById("result").textContent = `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-        });
-    </script>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>
