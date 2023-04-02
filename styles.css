@@ -1,3 +1,4 @@
+/* General styles */
 body {
     background-color: #f8f9fa;
 }
@@ -6,3 +7,26 @@ body {
     max-width: 500px;
     margin-top: 50px;
 }
+
+@media (max-width: 767px) {
+/* Show only mobile field on mobile */
+    #originalTimeMobile {
+        display: block;
+    }
+    #originalTimeMinutes,
+    #originalTimeSeconds {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Show only minutes and seconds fields on desktop */
+    #originalTimeMinutes,
+    #originalTimeSeconds {
+      display: block;
+    }
+    #originalTimeMobile {
+      display: none;
+    }
+}
+
