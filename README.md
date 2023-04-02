@@ -2,7 +2,9 @@
 
 Microwave Cooking Time Converter is a simple web app that helps users convert cooking times for microwave meals based on different wattages. If a meal's cooking instructions specify a certain cooking time for a specific wattage, this app will help users find the appropriate cooking time for their microwave with a different wattage.
 
-![Microwave Time Converter Screenshot](screenshot.png)
+<p align="center">
+  <img src="screenshot.png" alt="Microwave Time Converter Screenshot">
+</p>
 
 ## Features
 
